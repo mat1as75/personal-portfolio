@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
-    font-family: 'Work Sans';
+    font-family: 'JetBrains Mono';
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@ html{
     /* Me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
-/* MNEU */
+/* MENU */
 .contenedor-header{
     background: #1e2326;
     position: fixed;
@@ -602,18 +602,22 @@ html{
     max-width: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0.9;
 }
 .contacto .col .info ul{
     list-style: none;
+    
 }
 .contacto .col .info ul li{
     margin-bottom: 20px;
     font-size: 15px;
+    
 }
 .contacto .col .info ul li i{
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
+    opacity: 1;
 }
 footer{
     background-color: #252A2E;
