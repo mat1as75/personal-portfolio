@@ -40,3 +40,17 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+document.getElementById("buttonDescargarCV").onclick = function() {
+    const url = "resources/CV-MatiasAlfaro.pdf";
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+};

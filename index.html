@@ -79,7 +79,7 @@
                         </li>
                         <li>
                             <strong>Website</strong>
-                            www.example.com
+                            portfolio-matias-alfaro.netlify.app
                         </li>
                         <li>
                             <strong>Dirección</strong>
@@ -131,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <button>
+            <button id="buttonDescargarCV">
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
@@ -388,15 +388,17 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form name="contacto" method="POST" data-netlify="true">
+                        <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                        <input type="text" name="telefono" placeholder="Número telefónico" required>
+                        <input type="text" name="email" placeholder="Dirección de correo" required>
+                        <input type="text" name="tema" placeholder="Tema" required>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
@@ -405,7 +407,7 @@
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                25 de Mayo 626, Maldonado
+                                Maldonado, Uruguay
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
@@ -428,11 +430,11 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/matialfaro757575/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" target="_blank"></i></a>
+            <a href="#"><i class="fa-brands fa-skype" target="_blank"></i></a>
+            <a href="https://www.linkedin.com/in/matias-alfaro-iglesias-7541b121a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/mat1as75" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
 
